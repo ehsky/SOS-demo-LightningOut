@@ -11,7 +11,7 @@
     <!-- Start Copy Lightning Out -->
     <div data-lightning-out="true"></div>
     <script>
-      const siteEndpoint = "https://sosbarnebyer.my.site.com/external";
+      const siteEndpoint = "https://sosbarnebyer.my.salesforce-sites.com/external";
       const appName = "c:UserPreferenceApp";
       const componentName = "c:userPreferenceWrapper";
       const targetElm = document.querySelector("[data-lightning-out]");
@@ -33,9 +33,10 @@
           componentAttributes,
           targetElm,
           callbackFunction
-        );
-        siteEndpoint;
-      });
+          );
+      },
+      siteEndpoint
+      );
     </script>
     <!-- End Copy Lightning Out -->
   </body>
